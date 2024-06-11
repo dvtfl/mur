@@ -64,7 +64,7 @@
         }:
         let
           mur = import ./default.nix { inherit pkgs; };
-          packages = lib.filterAttrs (_: v: lib.isDerivation v) mur;
+          packages = lib.filterAttrs (_: pkg: lib.isDerivation pkg) mur;
           list-repo = pkgs.callPackage ./list-repo.nix { inherit pkgs packages overlays; }; # the binary is called "mur"
         in
         {

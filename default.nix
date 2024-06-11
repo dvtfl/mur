@@ -15,4 +15,6 @@
   overlays = import ./overlays; # nixpkgs overlays
 
   ayugram-desktop = pkgs.callPackage ./pkgs/ayugram.nix { };
+
+  zed-editor = pkgs.callPackage ./pkgs/latest/zed.nix { };
 }
