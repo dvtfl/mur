@@ -14,7 +14,7 @@ pkgs.telegram-desktop.overrideAttrs (
       repo = "AyuGramDesktop";
       rev = "v${finalAttrs.version}";
       fetchSubmodules = true;
-      hash = "sha256-XaywX/kxRxN7vkItsvNGexjoukfAyyvEVMrn1Vy7U54=";
+      hash = "sha256-7KmXA3EDlCszoUfQZg3UsKvfRCENy/KLxiE08J9COJ8=";
     };
 
     installPhase = lib.optionalString stdenv.isDarwin ''
